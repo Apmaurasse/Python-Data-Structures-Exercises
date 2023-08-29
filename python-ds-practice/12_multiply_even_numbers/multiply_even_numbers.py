@@ -12,3 +12,8 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+    current_total = 1
+    for char in nums:
+        if char % 2 == 0:
+            current_total *= char
+    return current_total

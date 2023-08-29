@@ -21,3 +21,8 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    cleaned_phrase = ''.join(char.lower() for char in phrase if char.isalnum())
+
+    return cleaned_phrase == cleaned_phrase[::-1]
+
+
